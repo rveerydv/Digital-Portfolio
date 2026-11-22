@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rajveer Yadav | Data Analyst</title>
+<meta name="description" content="BCA student at Lovely Professional University building a career in data analysis with Python, SQL, Power BI and Tableau.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eefaff;--surface:rgba(255,255,255,.74);--ink:#14173d;--muted:#4c5878;--line:#c6dcee;
+  --accent:#2563eb;--accent-ink:#ffffff;--warm:#d1197f;--bar:#cfe4f3;
+  --g1:#06b6d4;--g2:#2563eb;--g3:#e11d8f;
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#080d24;--surface:rgba(20,26,58,.72);--ink:#eaf0ff;--muted:#a6b3d6;--line:#28335f;
+  --accent:#6c8cff;--accent-ink:#071022;--warm:#ff7ac6;--bar:#26315c;
+  --g1:#22d3ee;--g2:#6c8cff;--g3:#ff5cb8;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#080d24;--surface:rgba(20,26,58,.72);--ink:#eaf0ff;--muted:#a6b3d6;--line:#28335f;
+  --accent:#6c8cff;--accent-ink:#071022;--warm:#ff7ac6;--bar:#26315c;
+  --g1:#22d3ee;--g2:#6c8cff;--g3:#ff5cb8;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(900px 520px at 6% -4%,color-mix(in srgb,var(--g1) 26%,transparent),transparent 62%),radial-gradient(800px 520px at 102% 8%,color-mix(in srgb,var(--g3) 20%,transparent),transparent 62%),radial-gradient(900px 600px at 50% 108%,color-mix(in srgb,var(--g2) 24%,transparent),transparent 62%),var(--bg);background-attachment:fixed;color:var(--ink);font:400 1rem/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","IBM Plex Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 78%,transparent);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;gap:6px;height:60px}
+nav .brand{font:800 1.1rem "Bricolage Grotesque",sans-serif;text-decoration:none;margin-right:auto}
+nav a.l{padding:8px 11px;text-decoration:none;color:var(--muted);font-size:.92rem;border-radius:8px}
+nav a.l:hover{color:var(--ink);background:var(--surface)}
+.tbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;width:38px;height:38px;cursor:pointer;font-size:1rem}
+@media(max-width:760px){nav a.l{display:none}}
+
+.hero{padding:72px 0 56px}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);font-weight:800;letter-spacing:-.03em;max-width:12ch;background:linear-gradient(90deg,var(--g1),var(--g2) 50%,var(--g3));-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;padding-bottom:.08em}
+.hero .role{font:600 1.15rem "Bricolage Grotesque",sans-serif;color:var(--accent);margin:18px 0 14px}
+.hero p.lead{max-width:60ch;color:var(--muted);font-size:1.08rem;margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:11px 18px;border-radius:10px;font-weight:600;text-decoration:none;border:1.5px solid var(--ink);cursor:pointer;font-family:inherit;font-size:.95rem;background:transparent;color:var(--ink)}
+.btn.p{background:linear-gradient(90deg,var(--g1),var(--g2) 55%,var(--g3));border-color:transparent;color:var(--accent-ink)}
+.btn:not(.p){border-color:var(--g2)}
+.btn:hover{transform:translateY(-1px)}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-top:48px}
+.facts div{background:var(--surface);padding:16px 18px}
+.facts b{display:block;font:700 1.25rem "Bricolage Grotesque",sans-serif}
+.facts span{color:var(--muted);font-size:.88rem}
+
+section{padding:56px 0;border-top:1px solid var(--line)}
+section h2{font-size:clamp(1.7rem,4vw,2.4rem);font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.sub{color:var(--muted);max-width:62ch;margin:0 0 30px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.box{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px}
+.box h3{font-size:1.15rem;margin-bottom:8px}
+.box p{margin:0;color:var(--muted)}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px;padding:0;list-style:none}
+.chips li{border:1px solid var(--line);border-radius:999px;padding:4px 12px;font-size:.88rem;background:var(--bg)}
+
+/* roadmap: the signature element */
+.road{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:26px}
+.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;align-items:end;height:190px;margin-bottom:22px}
+.step{border:0;background:var(--bar);border-radius:10px 10px 4px 4px;cursor:pointer;color:var(--ink);font:700 .95rem "Bricolage Grotesque",sans-serif;display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px;transition:background .25s}
+.step:nth-child(1){height:28%}.step:nth-child(2){height:42%}.step:nth-child(3){height:56%}
+.step:nth-child(4){height:70%}.step:nth-child(5){height:85%}.step:nth-child(6){height:100%}
+.step:hover{background:color-mix(in srgb,var(--accent) 35%,var(--bar))}
+.step[aria-selected="true"]{background:linear-gradient(0deg,var(--g1),var(--g2) 55%,var(--g3));color:var(--accent-ink)}
+.detail{display:grid;grid-template-columns:1fr 1fr;gap:22px;min-height:120px}
+@media(max-width:760px){.detail{grid-template-columns:1fr}.steps{height:150px;gap:6px}}
+.detail h3{font-size:1.4rem;margin-bottom:6px}
+.detail small{display:block;color:var(--warm);font-weight:600;margin-bottom:4px}
+.detail p{margin:0;color:var(--muted)}
+.axis{display:flex;justify-content:space-between;color:var(--muted);font-size:.82rem;margin-top:-10px;margin-bottom:18px}
+
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.proj .when{font-size:.85rem;color:var(--warm);font-weight:600}
+.proj h3{font-size:1.15rem}
+.proj p{margin:0;color:var(--muted);font-size:.95rem}
+.proj .chips{margin-top:auto;padding-top:6px}
+
+.edu{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.edu li{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px}
+.edu b{font-weight:600}.edu span{color:var(--muted)}
+ul.plain{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+ul.plain li{margin-bottom:6px}
+
+.contact{display:grid;gap:12px}
+.contact a.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px 20px;text-decoration:none}
+.contact a.row:hover{border-color:var(--accent)}
+.contact a.row span{color:var(--muted)}
+footer{padding:32px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:10px;opacity:0;pointer-events:none;transition:opacity .2s}
+#toast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav aria-label="Main">
+  <a class="brand" href="#top">Rajveer Yadav</a>
+  <a class="l" href="#about">About</a><a class="l" href="#skills">Skills</a><a class="l" href="#roadmap">Roadmap</a>
+  <a class="l" href="#projects">Projects</a><a class="l" href="#education">Education</a><a class="l" href="#contact">Contact</a>
+  <button class="tbtn" id="theme" aria-label="Switch light or dark theme">◐</button>
+</nav></div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <h1>Rajveer Yadav</h1>
+  <div class="role">Aspiring Data Analyst</div>
+  <p class="lead">BCA student at Lovely Professional University, Ghazipur, U.P. I’m learning to turn raw data into clear decisions with Python, SQL and dashboards, one project at a time.</p>
+  <div class="btns">
+    <a class="btn p" href="#projects">See my projects</a>
+    <a class="btn" href="#contact">Get in touch</a>
+    <a class="btn" href="https://github.com/rveerydv" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://www.linkedin.com/in/rveerydv" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+  <div class="facts">
+    <div><b>BCA, 2026–2029</b><span>Lovely Professional University</span></div>
+    <div><b>8.5 / 10</b><span>Target CGPA</span></div>
+    <div><b>Semester 4</b><span>Internship goal</span></div>
+    <div><b>50+</b><span>Coding challenges to solve</span></div>
+  </div>
+</div>
+
+<section id="about"><div class="wrap">
+  <h2>About me</h2>
+  <p class="sub">I started with Python, SQL and HTML in school. Now I’m focused on data extraction, visualization, exploratory analysis and relational databases. I work in a structured way, enjoy teamwork, and improve by building things.</p>
+  <div class="two">
+    <div class="box"><h3>Career objective</h3><p>Land an entry-level Data Analyst role or internship by Semester 4 at a fast-moving tech company or IT MNC such as TCS, Infosys, Wipro, IBM or Amazon.</p></div>
+    <div class="box"><h3>Vision for 2029</h3><p>Graduate with a strong academic record, a complete GitHub portfolio of EDA and BI dashboard projects, and real internship experience. Then grow into a Senior Data Analyst or Data Scientist.</p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <h2>Skills</h2>
+  <p class="sub">The tools I use and am building depth in.</p>
+  <div class="skills">
+    <div class="box"><h3>Programming</h3><ul class="chips"><li>Python</li><li>Pandas</li><li>NumPy</li><li>SQL</li><li>C</li><li>R</li></ul></div>
+    <div class="box"><h3>Data visualization</h3><ul class="chips"><li>Power BI</li><li>Tableau</li><li>Matplotlib</li><li>Seaborn</li></ul></div>
+    <div class="box"><h3>Databases</h3><ul class="chips"><li>MySQL</li><li>PostgreSQL</li><li>SQL Server</li></ul></div>
+    <div class="box"><h3>Spreadsheets and analysis</h3><ul class="chips"><li>Advanced Excel</li><li>Pivot Tables</li><li>VLOOKUP</li><li>Power Query</li><li>Google Sheets</li><li>EDA</li><li>Git</li><li>GitHub</li><li>Jupyter</li></ul></div>
+    <div class="box"><h3>Cloud</h3><ul class="chips"><li>AWS Foundations</li><li>Cloud Essentials</li></ul></div>
+    <div class="box"><h3>Soft skills</h3><ul class="chips"><li>Analytical thinking</li><li>Data storytelling</li><li>Teamwork</li><li>Problem-solving</li><li>Presentation</li><li>Communication</li><li>Attention to detail</li></ul></div>
+  </div>
+</div></section>
+
+<section id="roadmap"><div class="wrap">
+  <h2>2026–2029 roadmap</h2>
+  <p class="sub">Select a semester to see what I plan to learn, certify and build. Taller bars mean closer to job-ready.</p>
+  <div class="road">
+    <div class="steps" role="tablist" aria-label="Semesters" id="steps"></div>
+    <div class="axis"><span>Foundations</span><span>Placement ready</span></div>
+    <div class="detail" aria-live="polite">
+      <div><small id="dSem"></small><h3 id="dCert"></h3><p id="dSkills"></p></div>
+      <div><small>Deliverable</small><h3 id="dProj" style="font-size:1.15rem"></h3><p id="dNote"></p></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <h2>Projects</h2>
+  <p class="sub">Academic and data projects across my degree. Later semesters are planned and will be added to GitHub as I complete them.</p>
+  <div class="projects">
+    <article class="proj"><span class="when">Semester 1</span><h3>Basic C programming utility</h3><p>A foundational C program that automates simple mathematical calculations and logic operations.</p><ul class="chips"><li>C</li></ul></article>
+    <article class="proj"><span class="when">Semesters 2–3</span><h3>EDA on a public dataset</h3><p>Cleaning, summarizing, statistical testing and visualizing raw public data to find key insights and spot trends.</p><ul class="chips"><li>Python</li><li>Pandas</li><li>Matplotlib</li></ul></article>
+    <article class="proj"><span class="when">Dashboard</span><h3>E-commerce sales and performance</h3><p>A central dashboard with KPI reporting to support data-driven business decisions.</p><ul class="chips"><li>Power BI</li><li>SQL</li><li>Excel</li></ul></article>
+    <article class="proj"><span class="when">Semester 4</span><h3>SQL database design and query optimization</h3><p>Designing efficient relational schemas and writing complex queries with joins to pull data efficiently.</p><ul class="chips"><li>MySQL</li><li>Relational databases</li></ul></article>
+    <article class="proj"><span class="when">Semester 5</span><h3>Cloud data pipeline and dashboard</h3><p>A data pipeline on cloud storage with interactive Tableau dashboards that show KPIs to stakeholders.</p><ul class="chips"><li>AWS</li><li>Tableau</li><li>SQL</li></ul></article>
+    <article class="proj"><span class="when">Semester 6, capstone</span><h3>Sales forecasting with predictive analytics</h3><p>Machine learning models in Python that forecast trends and support strategic business planning.</p><ul class="chips"><li>Python</li><li>Machine learning</li><li>Tableau</li></ul></article>
+  </div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <h2>Education and goals</h2>
+  <p class="sub">&nbsp;</p>
+  <ul class="edu">
+    <li><b>Bachelor of Computer Applications, Lovely Professional University</b><span>2026–2029 · Target CGPA 8.5/10</span></li>
+    <li><b>Class XII (Science), Evergreen Public School</b><span>2026</span></li>
+    <li><b>Class X, Evergreen Public School</b><span>2024</span></li>
+  </ul>
+  <div class="two" style="margin-top:20px">
+    <div class="box"><h3>Target companies</h3><p>Tata Consultancy Services (TCS), Infosys, IBM, Amazon and Wipro.</p></div>
+    <div class="box"><h3>Co-curricular goals</h3><ul class="plain"><li>Take part in at least two college or inter-college hackathons.</li><li>Solve 50+ programming and problem-solving challenges.</li><li>Present a working project at a university technical event and contribute to open-source repositories.</li></ul></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <p class="sub">Open to internships, collaborations and advice. Based in Ghazipur, Uttar Pradesh.</p>
+  <div class="contact">
+    <a class="row" href="mailto:botyadav63@gmail.com"><b>Email</b><span>botyadav63@gmail.com</span></a>
+    <a class="row" href="https://www.linkedin.com/in/rveerydv" target="_blank" rel="noopener"><b>LinkedIn</b><span>linkedin.com/in/rveerydv</span></a>
+    <a class="row" href="https://github.com/rveerydv" target="_blank" rel="noopener"><b>GitHub</b><span>github.com/rveerydv</span></a>
+  </div>
+  <div class="btns" style="margin-top:18px"><button class="btn p" id="copy">Copy email address</button></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© 2026 Rajveer Yadav · Data Analyst in the making</div></footer>
+<div id="toast" role="status"></div>
+
+<script>
+const S=[
+ {c:"C Programming (NPTEL)",s:"Logical thinking and GitHub setup.",p:"Basic C utility project",n:"Automates simple calculations and logic."},
+ {c:"Data Analytics with Python (NPTEL)",s:"Pandas, NumPy and statistical testing.",p:"Python EDA mini-project",n:"Clean, summarize and visualize a public dataset."},
+ {c:"Database Management System (Swayam)",s:"Relational databases and SQL joins.",p:"SQL database design project",n:"A schema plus complex join queries."},
+ {c:"AWS Foundations: Cloud Essentials (AWS Training)",s:"Cloud basics and summer internship applications.",p:"Cloud data pipeline prototype",n:"A first pipeline on cloud storage."},
+ {c:"Data Visualization with Tableau (Coursera)",s:"Interactive dashboards.",p:"Data Analyst internship (8–12 weeks)",n:"Real-world dashboards for real stakeholders."},
+ {c:"IBM Data Science Professional Certificate (Coursera)",s:"Machine learning basics and placement readiness.",p:"Predictive analytics capstone",n:"Sales forecasting with a full-time placement in view."}
+];
+const box=document.getElementById("steps");
+function show(i){
+  [...box.children].forEach((b,j)=>b.setAttribute("aria-selected",j===i));
+  dSem.textContent="Semester "+(i+1);dCert.textContent=S[i].c;dSkills.textContent=S[i].s;dProj.textContent=S[i].p;dNote.textContent=S[i].n;
+}
+S.forEach((_,i)=>{const b=document.createElement("button");b.className="step";b.setAttribute("role","tab");b.textContent="Sem "+(i+1);b.onclick=()=>show(i);box.appendChild(b)});
+show(0);
+const root=document.documentElement;
+try{const t=localStorage.getItem("theme");if(t)root.dataset.theme=t}catch(e){}
+document.getElementById("theme").onclick=()=>{
+  const dark=root.dataset.theme?root.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;
+  root.dataset.theme=dark?"light":"dark";
+  try{localStorage.setItem("theme",root.dataset.theme)}catch(e){}
+};
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("on");setTimeout(()=>t.classList.remove("on"),1800)}
+document.getElementById("copy").onclick=async()=>{
+  try{await navigator.clipboard.writeText("botyadav63@gmail.com");toast("Email copied")}
+  catch(e){toast("Copy failed. Email: botyadav63@gmail.com")}
+};
+</script>
+</body>
+</html>
